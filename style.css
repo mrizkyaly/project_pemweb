@@ -120,6 +120,40 @@
 }
 
 /* End category */
+/* End Favorite Product */
+
+.news-menu {
+    margin-top: 50px;
+}
+
+.news .judul {
+    text-align: center;
+}
+
+.news .news-menu .news-detail {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.news .news-menu .news-detail h3 {
+    color: #0a9a78;
+    margin-bottom: 25px;
+}
+
+.btn-news {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #0a9a78 !important;
+    text-decoration: underline;
+    font-size: 13px;
+    transition: all ease 0.6s;
+}
+
+.btn-news:hover {
+    color: black !important;
+}
+
+/* End News */
 
 /* footer */
 .footer {
