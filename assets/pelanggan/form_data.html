@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Form | &#169; Insurgent Club</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header">
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar1" class="sidebar1">
+                <div id="dismiss1">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="sidebar-header1">
+                    <h3>Menu</h3>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Shop</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="#">Sepatu</a>
+                            </li>
+                            <li>
+                                <a href="#">Sandal</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Page Content  -->
+        </div>
+        <div class="overlay"></div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar2" class="sidebar2">
+                <div id="dismiss2">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="sidebar-header2">
+                    <h3>Cart</h3>
+                </div>
+            </nav>
+            <!-- Page Content  -->
+        </div>
+        <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container d-flex justify-content-beetween">
+                <button class="btn d-lg-none btn-icon-nav shadow-none" id="sidebarCollapse1" type="button">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="produk.html" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                shop
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="produk.html">All Product</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Footwear</a>
+                                <a class="dropdown-item" href="#">Apparels</a>
+                                <a class="dropdown-item" href="#">Accessories</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-icon-nav shadow-none" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <form class="form-inline d-flex justify-content-center" action="">
+                                    <input class="form-control shadow-none" type="search..." placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn d-flex align-items-center btn-search" type="submit"><i
+                                            class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand text-center" href="index.html">
+                    <img src="./assets/img/logo1.png" width="100" height="30" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="btn btn-icon-nav shadow-none" id="sidebarCollapse2">
+                    <i class="fas fa-shopping-bag"></i>
+                </button>
+            </div>
+        </nav>
+    </section>
+    <!-- End header -->
+
+    <!-- Form product -->
+    <section class="form-data">
+        <div class="container-fluid p-5">
+            <h2 class="judul pb-3">Form</h2>
+            <div class="mx-auto heading-line"></div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mt-5">
+                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pelanggan</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tambah Pelanggan</li>
+                </ol>
+            </nav>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-11">
+                    <div class="card">
+                        <h5 class="card-header py-3">Tambah Data</h5>
+                        <div class="card-body">
+                            <form class="p-3">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control shadow-none" id="inputEmail4"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Password</label>
+                                        <input type="password" class="form-control shadow-none" id="inputPassword4"
+                                            placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Nama</label>
+                                    <input type="text" class="form-control shadow-none" id="inputAddress"
+                                        placeholder="Nama Lengkap">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Alamat</label>
+                                    <input type="text" class="form-control shadow-none" id="inputAddress"
+                                        placeholder="Alamat Lengkap">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Nomor</label>
+                                    <input type="text" class="form-control shadow-none" id="inputAddress2"
+                                        placeholder="Nomor Telepon">
+                                </div>
+                                <button type="submit" class="btn btn-form btn-block p-2">Tambah Data</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container ">
+            <div class="container-fluid text-md-left py-5">
+                <div class="row footer-details">
+                    <div class="col-lg-4 py-2 about-us">
+                        <h5>About Us</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur excepturi
+                            exercitationem tempora ea, ducimus ratione doloremque quaerat voluptas aperiam.</p>
+                        <p>Get to know us better by following our social media handles!</p>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-4 py-2 company">
+                        <h5>Company</h5>
+                        <ul class="company-item">
+                            <li>
+                                <a href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4  py-2 newsletter">
+                        <form action="">
+                            <div class="form-group">
+                                <h5>Newsletter</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur
+                                    excepturi
+                                    exercitationem tempora ea, ducimus ratione doloremque quaerat voluptas aperiam.</p>
+                                <input type="email" class="form-control form-email" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter your email address">
+                            </div>
+                            <button type="submit" class="btn btn-newsletter">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-copyright text-left py-3">
+        <div class="container">
+            <p>2020 &#169; Insurgent Club</p>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

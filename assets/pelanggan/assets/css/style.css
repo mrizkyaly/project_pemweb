@@ -1,0 +1,1082 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+    --primary-color: #0a9a78;
+    --dark-black-color: #1a1a1a;
+    --grey-color: #b0b0b0;
+    --sidebar-bg-color: #454545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: montserrat;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR MENU STYLE
+----------------------------------------------------- */
+
+.sidebar1 {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100vh;
+    z-index: 9999;
+    background: var(--sidebar-bg-color);
+    color: white;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar1.active {
+    left: 0;
+}
+
+#dismiss1 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--grey-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss1:hover {
+    color: var(--grey-color);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar1 .sidebar-header1 {
+    padding: 10px;
+    background: var(--sidebar-bg-color);
+}
+
+.sidebar1 .sidebar-header1 h3 {
+    font-weight: 700;
+}
+
+/* .sidebar1 ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--primary-color) !important;
+} */
+
+.sidebar1 ul li a {
+    padding: 15px;
+    font-size: 1.1em;
+    display: block;
+    color: white !important;
+    transition: all ease 0.3s;
+}
+
+.sidebar1 ul li a:hover {
+    text-decoration: underline;
+    color: var(--grey-color) !important;
+}
+
+.sidebar1 ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: var(--sidebar-bg-color);
+    color: white !important;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR CART STYLE
+----------------------------------------------------- */
+
+.sidebar2 {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    height: 100vh;
+    z-index: 9999;
+    background: #eee;
+    color: var(--dark-black-color);
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar2.active {
+    right: 0;
+}
+
+#dismiss2 {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--dark-black-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss2:hover {
+    background: var(--black-color);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar2 .sidebar-header2 {
+    padding: 20px;
+    background: #eee;
+}
+
+.sidebar2 .sidebar-header2 h3 {
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
+.navbar {
+    background-color: white;
+    font-size: 16px;
+    padding: 16px 2px;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+    border-bottom: solid 1px #eee;
+}
+
+.navbar .navbar-nav .nav-item.active {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+    color: #0a9a78 !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #0a9a78 !important;
+}
+
+.navbar .btn-icon-nav {
+    background-color: transparent;
+}
+
+
+.navbar .dropdown .dropdown-menu {
+    width: 250px;
+    padding: 13px;
+    border-radius: 0%;
+    border-color: #eee;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.navbar .dropdown-menu.active {
+    transition: all ease 0.5s;
+}
+
+.navbar .dropdown .dropdown-menu a {
+    font-size: 14px;
+    background: none;
+    transition: all 0.5s ease;
+}
+
+.navbar .dropdown .dropdown-menu a:hover {
+    color: var(--grey-color);
+}
+
+.navbar .dropdown .dropdown-menu input {
+    font-size: 10px;
+    border-radius: 0%;
+    height: 30px;
+    width: 170px;
+}
+
+.navbar .dropdown .dropdown-menu input:focus {
+    border-color: var(--grey-color);
+}
+
+.navbar .dropdown .dropdown-menu input::placeholder {
+    font-size: 10px;
+}
+
+.navbar .btn-search {
+    margin-left: 5px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 0%;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: all ease 0.6s;
+}
+
+.navbar .btn-search:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.navbar.active {
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------
+    SLIDER STYLE
+----------------------------------------------------- */
+.slider-menu {
+    margin-top: 70px;
+}
+
+.slider-menu .carousel-inner .carousel-item img {
+    height: 560px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.slider-menu .btn-slider {
+    margin-top: 12px;
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 0%;
+    background: #0a9a78;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all ease 0.6s;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-menu .btn-slider:hover {
+    margin-top: 25px;
+    border: solid 1px white;
+    background: transparent;
+}
+
+.slider-menu h5 {
+    margin-bottom: 10px;
+}
+
+.slider-menu .carousel-caption {
+    text-align: left;
+}
+
+/* ---------------------------------------------------
+    ALL PRODUCT STYLE
+----------------------------------------------------- */
+
+.my-produk {
+    margin-top: 70px;
+}
+
+.judul {
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn-product {
+    width: 200px;
+    height: 45px;
+    background-color: #0a9a78 !important;
+    border-color: transparent !important;
+    color: #fff !important;
+    border-radius: 0;
+    position: relative;
+    font-size: 15px;
+    transition: all ease-in-out 0.6s;
+}
+
+.btn-product:hover {
+    width: 230px;
+    background-color: transparent !important;
+    border-color: #0a9a78 !important;
+    color: #0a9a78 !important;
+}
+
+.heading-line {
+    height: 3px;
+    width: 10%;
+    background: #0a9a78;
+    transition: all ease 0.6s;
+}
+
+.heading-line:hover {
+    width: 15%;
+}
+
+.breadcrumb {
+    border-top: solid #eee 1px;
+    border-bottom: solid #eee 1px;
+    border-radius: 0%;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: var(--dark-black-color);
+    transition: all ease 0.2s;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.pagination li {
+    font-size: 13px;
+    margin-right: 10px;
+    border-radius: 0px;
+}
+
+.pagination li a {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.pagination li a:hover {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.pagination li .arah {
+    font-weight: 400;
+    border-radius: 0% !important;
+}
+
+.dropdown-sort .btn-sort {
+    width: 200px;
+    padding: 10px;
+    border-radius: 0%;
+    font-size: 13px;
+    border-color: var(--grey-color);
+    color: var(--dark-black-color);
+    background-color: transparent;
+}
+
+.dropdown-sort .dropdown-menu {
+    width: 200px;
+    border-radius: 0%;
+    font-size: 13px;
+    border-color: var(--grey-color);
+    color: var(--grey-color);
+    background-color: white;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-sort .dropdown-menu .dropdown-item {
+    padding: 15px;
+    transition: all ease 0.5s !important;
+}
+
+.dropdown-sort .dropdown-menu .dropdown-item:hover {
+    color: var(--grey-color);
+}
+
+/* ---------------------------------------------------
+    CARD PRODUCT STYLE
+----------------------------------------------------- */
+
+.produk {
+    border-radius: 0px;
+    border: none;
+    transition: all ease 0.5s;
+    text-align: center;
+}
+
+.produk h5 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.produk p {
+    font-size: 12px;
+}
+
+.produk .btn-produk {
+    width: 130px;
+    border-radius: 0px;
+    border-color: var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 12px;
+    transition: all ease 0.6s;
+}
+
+.produk .btn-produk:hover {
+    width: 110px;
+    border-color: white;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ---------------------------------------------------
+    FOOTER STYLE
+----------------------------------------------------- */
+
+.footer {
+    background-color: #1a1a1a;
+    padding-bottom: 80px;
+    border-bottom: solid 1px #b0b0b0;
+}
+
+.footer-details h5 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-us i {
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-right: 20px;
+}
+
+.about-us i:hover {
+    color: white;
+}
+
+.company ul {
+    list-style: none;
+}
+
+.company a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.company a:hover {
+    color: #0a9a78;
+    text-decoration: underline;
+}
+
+.footer-details p {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.footer-details .form-email {
+    height: 45px;
+    border-radius: 0px;
+    background-color: #1a1a1a !important;
+    border-color: #b0b0b0 !important;
+    color: white !important;
+    font-size: 12px;
+    padding: 20px 12px;
+}
+
+.btn-newsletter {
+    width: 30%;
+    height: 45px;
+    background-color: #0a9a78 !important;
+    border-color: transparent !important;
+    color: #fff !important;
+    border-radius: 0;
+    font-size: 15px;
+    transition: all ease-in-out 0.6s;
+}
+
+.btn-newsletter:hover {
+    background-color: transparent !important;
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+.footer-copyright {
+    background-color: #1a1a1a;
+}
+
+.footer-copyright p {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ---------------------------------------------------
+    LOGIN STYLE
+----------------------------------------------------- */
+.login {
+    margin-top: 70px;
+}
+
+.login .card {
+    width: 50%;
+    border: none;
+}
+
+.login .card .card-title {
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+.login .card p {
+    font-size: 14px;
+}
+
+.login form label {
+    font-size: 14px;
+}
+
+.login form input {
+    border-radius: 0px;
+    font-size: 13px;
+}
+
+.login form input:focus {
+    border-color: var(--grey-color);
+}
+
+.login form input::placeholder {
+    font-size: 13px;
+}
+
+
+.login form a {
+    font-size: 13px;
+    color: var(--dark-black-color);
+}
+
+.login form a:hover {
+    color: var(--primary-color);
+}
+
+.login .btn-login {
+    border-color: var(--primary-color);
+    color: white;
+    border-radius: 0px;
+    background-color: var(--primary-color);
+    height: 45px;
+    transition: all ease 0.6s;
+}
+
+.login .btn-login:hover {
+    background-color: var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.login .register {
+    color: var(--grey-color);
+}
+
+.login .register a {
+    color: var(--dark-black-color);
+}
+
+.login .register a:hover {
+    color: var(--primary-color);
+}
+
+/* ---------------------------------------------------
+    REGISTER STYLE
+----------------------------------------------------- */
+.register {
+    margin-top: 70px;
+}
+
+.register .card {
+    width: 50%;
+    border: none;
+}
+
+.register .card .card-title {
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+.register .card p {
+    font-size: 14px;
+}
+
+.register form label {
+    font-size: 14px;
+}
+
+.register form input {
+    border-radius: 0px;
+    font-size: 13px;
+}
+
+.register form input:focus {
+    border-color: var(--grey-color);
+}
+
+.register form input::placeholder {
+    font-size: 13px;
+}
+
+.register form a {
+    font-size: 13px;
+    color: var(--dark-black-color);
+}
+
+.register form a:hover {
+    color: var(--primary-color);
+}
+
+.register .btn-login {
+    border-color: var(--primary-color);
+    color: white;
+    border-radius: 0px;
+    background-color: var(--primary-color);
+    height: 45px;
+    transition: all ease 0.6s;
+}
+
+.register .btn-login:hover {
+    background-color: var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.register .register {
+    color: var(--grey-color);
+}
+
+.register .register a {
+    color: var(--dark-black-color);
+}
+
+.register .register a:hover {
+    color: var(--primary-color);
+}
+
+/* ---------------------------------------------------
+    DETAIL PRODUJ STYLE
+----------------------------------------------------- */
+.detail-produk {
+    margin-top: 70px;
+}
+
+.detail-produk h5 {
+    color: var(--dark-black-color);
+    margin: 15px 0px;
+}
+
+.detail-produk h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.detail-produk h6 {
+    color: var(--dark-black-color);
+    font-weight: 700;
+}
+
+.detail-produk p {
+    color: var(--dark-black-color);
+    font-size: 13px;
+}
+
+.detail-produk .btn-detail-produk {
+    border-radius: 0px;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.detail-produk .btn-detail-produk:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: transparent;
+}
+
+.detail-produk .btn-size {
+    border-radius: 0px;
+    width: 70px;
+    border-color: var(--grey-color);
+    color: var(--dark-black-color);
+    background-color: transparent;
+}
+
+.dropdown-size .dropdown-isi {
+    width: 70px;
+    border-radius: 0px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-size .dropdown-isi .dropdown-item {
+    text-align: center;
+    color: var(--dark-black-color);
+    transition: all ease 0.5s !important;
+}
+
+.dropdown-size .dropdown-isi .dropdown-item:hover {
+    color: var(--grey-color);
+}
+
+.detail-produk .card {
+    border-radius: 0px;
+    border-color: #eee;
+    transition: all ease 0.5s;
+}
+
+.detail-produk .card:hover {
+    border-color: #eee;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------
+    ACCOUNT STYLE
+----------------------------------------------------- */
+.account {
+    margin-top: 70px;
+}
+
+.account .btn-logout {
+    font-size: 14px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-color: var(--grey-color);
+    color: var(--grey-color);
+}
+
+.account .btn-shop {
+    font-size: 14px;
+    border-radius: 0px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.account .btn-shop:hover {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.account .welcome h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.account .welcome p {
+    font-size: 16px;
+}
+
+.account .welcome a {
+    color: var(--primary-color);
+    transition: all ease 0.3s;
+}
+
+.account .welcome a:hover {
+    color: var(--grey-color);
+    text-decoration: none;
+}
+
+.account .card {
+    border-radius: 0px;
+    border-color: #eee;
+    transition: all ease 0.5s;
+}
+
+.account .card:hover {
+    border-color: #eee;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.account .card-title {
+    text-align: left;
+    font-weight: 700;
+}
+
+.account .profile img {
+    margin-top: 8px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.account .profile p {
+    font-style: italic;
+}
+
+.account .address .card-text {
+    font-size: 13px;
+}
+
+.account .address .card-link {
+    font-size: 12px;
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: all ease 0.5s;
+}
+
+.account .address .card-link:hover {
+    color: var(--dark-black-color);
+}
+
+.account .card-body h4 {
+    font-size: 20px;
+}
+
+.account .card-body p,
+input,
+label,
+::placeholder {
+    font-size: 13px;
+}
+
+.account .card-body input {
+    border-radius: 0%;
+    font-size: 13px;
+}
+
+.account .card-body input:focus {
+    border-color: var(--grey-color);
+}
+
+.account .card-body .btn-edit-modal {
+    font-size: 15px;
+    border-radius: 0px;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.account .card-body .btn-edit-modal:hover {
+    border-color: var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* ---------------------------------------------------
+    TRANSAKSI STYLE
+----------------------------------------------------- */
+.transaksi {
+    margin-top: 70px;
+}
+
+.transaksi .shipping .card {
+    border-radius: 0px;
+    transition: all ease 0.5s;
+}
+
+.transaksi .shipping .card:hover {
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.produk-selected .card {
+    border: none;
+}
+
+.produk-selected .card-body h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.produk-selected .card-body h6 {
+    color: var(--primary-color);
+}
+
+.produk-selected .card-body p {
+    font-size: 14px;
+}
+
+.produk-selected .btn-remove {
+    font-size: 14px;
+    color: var(--dark-black-color);
+    text-decoration: underline;
+    transition: all ease 0.3s;
+}
+
+.produk-selected .btn-remove:hover {
+    color: var(--grey-color);
+
+}
+
+.shipping .card-body h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.shipping .card-body p,
+input,
+label,
+::placeholder {
+    font-size: 13px;
+}
+
+.shipping .card-body input {
+    border-radius: 0%;
+    font-size: 13px;
+}
+
+.shipping .card-body input:focus {
+    border-color: var(--grey-color);
+}
+
+.shipping .btn {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.shipping .btn-backshop {
+    background-color: transparent;
+    color: var(--dark-black-color);
+    transition: all ease 0.3s;
+}
+
+.shipping .btn-backshop:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.shipping .btn-beli {
+    width: 150px;
+    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0%;
+    transition: all ease 0.5s;
+}
+
+.shipping .btn-beli:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+
+/* ---------------------------------------------------
+    FORM DATA STYLE
+----------------------------------------------------- */
+
+.form-data {
+    margin-top: 70px;
+}
+
+.form-data .card {
+    border-radius: 0%;
+    transition: all ease 0.5s;
+}
+
+.form-data .card:hover {
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-data .card-header {
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.form-data form label {
+    font-size: 15px;
+}
+
+.form-data form input {
+    font-size: 13px;
+    border-radius: 0%;
+}
+
+.form-data form input::placeholder {
+    font-size: 13px;
+}
+
+.form-data form input:focus {
+    border-color: var(--grey-color);
+}
+
+.form-data .btn-form {
+    font-size: 15px;
+    color: white;
+    border-radius: 0%;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all ease 0.7s;
+}
+
+.form-data .btn-form:hover {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* ---------------------------------------------------
+    RESPONSIVE PHONE STYLE
+----------------------------------------------------- */
+@media (max-width: 575.98px) {
+    .slider-menu .carousel-inner .carousel-item img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .slider-menu .btn-slider {
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .slider-menu .carousel-caption {
+        text-align: center;
+    }
+
+    .login .card {
+        width: 100%;
+    }
+
+    .register .card {
+        width: 100%;
+    }
+
+    .dropdown-sort .btn-sort {
+        width: 130px;
+    }
+}
