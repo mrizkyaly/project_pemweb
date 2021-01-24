@@ -54,15 +54,15 @@
 				<div class="collapse navbar-collapse">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="<?php base_url() ?>home">Home</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="produk.html" id="navbarDropdown" role="button"
+							<a class="nav-link dropdown-toggle" href="<?php echo base_url() ?>shop" id="navbarDropdown" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								shop
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="produk.html">All Product</a>
+								<a class="dropdown-item" href="<?php echo base_url() ?>shop">All Product</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="#">Footwear</a>
 								<a class="dropdown-item" href="#">Apparels</a>
@@ -70,7 +70,7 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">News</a>
+							<a class="nav-link" href="<?php base_url() ?>profile">Profile</a>
 						</li>
 						<li class="nav-item dropdown">
 							<button class="btn btn-icon-nav shadow-none" href="#" id="navbarDropdown" role="button"
@@ -87,7 +87,7 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="login.html">Login/Register</a>
+							<a class="nav-link" href="<?php base_url() ?>login">Login/Register</a>
 						</li>
 					</ul>
 				</div>

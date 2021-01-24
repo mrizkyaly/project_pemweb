@@ -7,7 +7,7 @@
 					<div class="carousel-caption mb-5">
 						<h5>#BanggaBuatanIndonesia</h5>
 						<h2>Insurgent Series</h2>
-						<button type="button" class="btn btn-dark btn-slider">Shop Now</button>
+						<a href="<?php echo base_url() ?>shop"><button type="button" class="btn btn-dark btn-slider">Shop Now</button></a>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -15,7 +15,7 @@
 					<div class="carousel-caption mb-5">
 						<h5>#BanggaBuatanIndonesia</h5>
 						<h2>Insurgent Series</h2>
-						<button type="button" class="btn btn-dark btn-slider">Shop Now</button>
+						<a href="<?php echo base_url() ?>shop"><button type="button" class="btn btn-dark btn-slider">Shop Now</button></a>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -23,7 +23,7 @@
 					<div class="carousel-caption mb-5">
 						<h5>#BanggaBuatanIndonesia</h5>
 						<h2>Insurgent Series</h2>
-						<button type="button" class="btn btn-dark btn-slider">Shop Now</button>
+						<a href="<?php echo base_url() ?>shop"><button type="button" class="btn btn-dark btn-slider">Shop Now</button></a>
 					</div>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -121,7 +121,7 @@
 						<div class="card-body">
 							<h5 class="card-title">CATHARSIS AMY HOODIE BLACK</h5>
 							<p class="card-text">RP.299.000,-</p>
-							<a href="#" class="btn btn-primary btn-produk">View More</a>
+							<a href="#" class="btn btn-primary btn-produk">Buy Now</a>
 						</div>
 					</div>
 				</div>

@@ -22,7 +22,7 @@
 <body class="hold-transition login-page">
   <div class="login-box">
     <div class="login-logo">
-      <a href="<?php echo base_url() ?>login"><b><?php echo $title ?></b></a>
+      <a href="<?php echo base_url() ?>admin/login"><b><?php echo $title ?></b></a>
     </div>
     <!-- /.login-logo -->
     <div class="card">
@@ -68,8 +68,13 @@
             </div>
           </div>
           <!-- /.col -->
-          <div class="input-group mb-3">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          <div class="input-group">
+            <div class="col-md-6 py-1">
+              <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </div>
+            <div class="col-md-6 py-1">
+              <a href="<?php base_url() ?>register" class="btn btn-secondary btn-block">Register</a>
+            </div>
           </div>
           <!-- /.col -->
         </div>

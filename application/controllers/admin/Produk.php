@@ -66,7 +66,7 @@ class Produk extends CI_Controller {
                 $config['maintain_ratio'] 	= TRUE;
                 $config['width']         	= 250;//pixel
                 $config['height']       	= 250;
-                $config['thumb_marker']		='';
+                $config['thumb_marker']		= '';
 
                 $this->load->library('image_lib', $config);
                 
@@ -121,7 +121,7 @@ class Produk extends CI_Controller {
 
                 $this->load->library('upload', $config);
                 if (! $this->upload->do_upload('gambar')) {
-                    $data = array(  'title'     => 'Edit Produk'.$produk->nama_produk,
+                    $data = array(  'title'     => 'Edit Produk : '.$produk->nama_produk,
                                     'kategori'  => $kategori,
                                     'produk'    => $produk,
                                     'error'     => $this->upload->display_errors(),
@@ -139,7 +139,7 @@ class Produk extends CI_Controller {
                     $config['maintain_ratio'] 	= TRUE;
                     $config['width']         	= 250;//pixel
                     $config['height']       	= 250;
-                    $config['thumb_marker']		='';
+                    $config['thumb_marker']		= '';
 
                     $this->load->library('image_lib', $config);
                     

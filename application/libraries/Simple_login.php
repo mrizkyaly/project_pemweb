@@ -51,8 +51,6 @@ class Simple_login
 		$this->CI->session->set_flashdata('sukses','Anda berhasil logout');
 		redirect(base_url('admin/login'),'refresh');
 	}
-
-
 }
 
 /* End of file Simple_login.php */
